@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Líder de Projetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Login para Líderes de Projetos</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2>Faça login na sua conta de líder</h2>
+
+            <form id="leaderLoginForm" action="#">
+                <label for="email">E-mail Corporativo:</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail corporativo" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+
+                <div id="captchaContainer">
+                    <label for="captchaInput">Confirme que você não é um robô: <span id="captcha"></span></label>
+                    <input type="text" id="captchaInput" placeholder="Digite o código" required>
+                </div>
+
+                <button type="submit" class="login-btn">Entrar</button>
+            </form>
+
+            <div id="message"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Space Y</p>
+    </footer>
+
+    <script src="lider-login.js"></script>
+</body>
+</html>

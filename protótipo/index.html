@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt="Space Y">
+
+        </div>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2>Faça login na sua conta</h2>
+
+            <div class="social-login">
+                <button class="google-btn">Login com Google</button>
+                <button class="facebook-btn">Login com Facebook</button>
+                <button class="linkedin-btn">Login com LinkedIn</button>
+            </div>
+
+            <form id="loginForm" action="#">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+
+                <div id="captchaContainer">
+                    <label for="captchaInput">Confirme que você não é um robô: <span id="captcha"></span></label>
+                    <input type="text" id="captchaInput" placeholder="Digite o código" required>
+                </div>
+
+                <button type="submit" class="login-btn">Entrar</button>
+            </form>
+
+            <div class="options">
+                <a href="#">Esqueci minha senha</a>
+                <a href="Cadastro.html">Cadastre-se</a>
+            </div>
+
+            <!-- Botão para página de líderes -->
+            <div class="leader-link">
+                <a href="loginlider.html" class="leader-btn">Acesso para Líderes de Projetos</a>
+            </div>
+
+            <div id="message"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Space Y</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
