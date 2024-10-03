@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #232023; 
+    background-color: #232023;
     color: white;
     text-align: center;
 }
@@ -15,10 +15,27 @@ header {
     background-color: #002F61;
     padding: 20px;
     color: white;
+    position: relative; /* Para o botão de perfil */
 }
 
 header h1 {
     font-size: 1.8em;
+}
+
+.profile-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-button:hover {
+    background-color: #45a049;
 }
 
 main {
