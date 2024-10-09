@@ -85,3 +85,62 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Estilos para a seção de filtro de pesquisa */
+.search-filter-section {
+    background-color: #2C2C2C;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.filter-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+select:focus, input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .search-filter-section {
+        padding: 15px;
+    }
+
+    select, input[type="text"] {
+        font-size: 14px;
+    }
+}

@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel dos Líderes de Projetos</title>
     <link rel="stylesheet" href="insidepage.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
 <body>
     <header>
         <div class="logo">
             <h1>Painel dos Líderes de Projetos</h1>
+                </div>
+                <button class="profile-button" onclick="window.location.href='perfillider.html'">Ver Perfil</button>
     </header>
 
     <main>
@@ -18,12 +26,34 @@
             <p>Aqui você pode gerenciar suas equipes, acompanhar o progresso e delegar tarefas.</p>
 
             <div class="dashboard-buttons">
-                <button class="btn">Gerenciar Times</button>
+                <button class="btn" onclick="window.location.href='GerenciamentoTimes.html'">Gerenciar Times</button>
                 <button class="btn">Acompanhar Progresso</button>
                 <button class="btn">Criar Novos Times</button>
                 <button class="btn">Explorar Colaboradores</button>
             </div>
         </div>
+
+        <section class="search-filter-section">
+            <input type="text" id="searchBar" oninput="filtrarProjetos()" placeholder="Pesquisar Colaboradores...">
+
+            <div class="filter-bar">
+                <label for="filterSoft">Soft Skills:</label>
+                <select id="filterSoft" onchange="filtrarProjetos()">
+                    <option value="">Todas</option>
+                    <option value="Comunicação">Comunicação</option>
+                    <option value="Trabalho em equipe">Trabalho em equipe</option>
+                    <option value="Gestão de Tempo">Gestão de Tempo</option>
+                </select>
+
+                <label for="filterHard">Hard Skills:</label>
+                <select id="filterHard" onchange="filtrarProjetos()">
+                    <option value="">Todas</option>
+                    <option value="Matemática">Matemática Avançada</option>
+                    <option value="AnaliseData">Análise de Dados</option>
+                    <option value="Programação">Programação</option>
+                </select>
+            </div>
+        </section>
     </main>
 
     <footer>
