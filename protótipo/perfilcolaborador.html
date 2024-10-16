@@ -3,13 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil do Usuário</title>
-    <link rel="stylesheet" href="insidepage.css">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <title>Perfil do Colaborador</title>
+    <link rel="stylesheet" href="perfil.css">
 </head>
 <body>
     <header>
@@ -26,7 +21,7 @@
                 <h2>João Guedes</h2>
                 <p><strong>E-mail:</strong> joaog.ibmec.com</p>
                 <p><strong>Telefone:</strong> (21) 9999-1111</p>
-                <p><strong>Função:</strong> ?</p>
+                <p><strong>Função:</strong> Desenvolvedor Web</p>
             </div>
         </div>
 
@@ -38,6 +33,57 @@
                 <li>Equipe B - Análise de Dados</li>
                 <li>Equipe C - Inteligência Artificial</li>
             </ul>
+        </section>
+
+        <!-- Formulário de Competências -->
+        <section class="competency-form">
+            <h3>Competências Scrum</h3>
+
+            <!-- Competências Scrum -->
+            <fieldset>
+                <legend>Selecione suas competências Scrum:</legend>
+                <form>
+                    <label><input type="checkbox" name="PO"> Product Owner</label>
+                    <label><input type="checkbox" name="ScrumMaster"> Scrum Master</label>
+                    <label><input type="checkbox" name="Dev"> Desenvolvedor</label>
+                </form>
+            </fieldset>
+
+            <!-- Principal Competência Scrum -->
+            <fieldset>
+                <legend>Selecione sua principal competência Scrum:</legend>
+                <form>
+                    <label><input type="radio" name="principalScrum"> Product Owner</label>
+                    <label><input type="radio" name="principalScrum"> Scrum Master</label>
+                    <label><input type="radio" name="principalScrum"> Desenvolvedor</label>
+                </form>
+            </fieldset>
+
+            <h3>Competências Técnicas</h3>
+
+            <!-- Competências Técnicas -->
+            <fieldset>
+                <legend>Selecione suas competências técnicas:</legend>
+                <form>
+                    <label><input type="checkbox" name="ProManager"> Product Manager</label>
+                    <label><input type="checkbox" name="CienDados"> Cientista de Dados</label>
+                    <label><input type="checkbox" name="UX"> Designer de Experiência</label>
+                    <label><input type="checkbox" name="Growth"> Growth Manager</label>
+                    <label><input type="checkbox" name="Dev"> Desenvolvedor</label>
+                </form>
+            </fieldset>
+
+            <!-- Principal Competência Técnica -->
+            <fieldset>
+                <legend>Selecione sua principal competência técnica:</legend>
+                <form>
+                    <label><input type="radio" name="principalTech"> Product Manager</label>
+                    <label><input type="radio" name="principalTech"> Cientista de Dados</label>
+                    <label><input type="radio" name="principalTech"> Designer de Experiência</label>
+                    <label><input type="radio" name="principalTech"> Growth Manager</label>
+                    <label><input type="radio" name="principalTech"> Desenvolvedor</label>
+                </form>
+            </fieldset>
         </section>
     </main>
 
