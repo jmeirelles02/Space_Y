@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Gen AI</title>
+    <link rel="stylesheet" href="time1.css">
+</head>
+<body>
+    <header>
+        <h1>Gen AI</h1>
+    </header>
+
+
+    <section class="team-section">
+        <h2>Equipe</h2>
+        <ul>
+            <li>Ana - PO Interno</li>
+            <li>Carlos - Desenvolvedor</li>
+            <li>Maria - Scrum Master</li>
+            <li>Lucas - QA Tester</li>
+            <li>João -  Desenvolvedor</li>
+            <li>Tiago -  Desenvolvedor</li>
+            <li>Vinicius -  PO externo</li>
+        </ul>
+    </section>
+
+    <section class="chat-section">
+        <h2>Chat de Texto</h2>
+        <div class="chat-box" id="chat-box" style="height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;">
+
+        </div>
+        <br>
+        <form id="chat-form">
+            <input type="text" id="message-input" placeholder="Digite sua mensagem aqui" style="width: 80%;">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+
+    <section class="log-section">
+        <h2>Registro Weekly/Daily</h2>
+        <form id="log-form">
+            <textarea id="log-input" placeholder="Escreva seu registro diário/semanal aqui..." style="width: 100%; height: 100px;"></textarea>
+            <br>
+            <button type="submit">Salvar Registro</button>
+        </form>
+        <div id="log-entries">
+
+        </div>
+    </section>
+
+    <script>
+
+        document.getElementById('chat-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const messageInput = document.getElementById('message-input');
+            const chatBox = document.getElementById('chat-box');
+
+            if (messageInput.value) {
+                const newMessage = document.createElement('p');
+                newMessage.textContent = messageInput.value;
+                chatBox.appendChild(newMessage);
+                messageInput.value = '';
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        });
+
+
+        document.getElementById('log-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const logInput = document.getElementById('log-input');
+            const logEntries = document.getElementById('log-entries');
+
+            if (logInput.value) {
+                const newLog = document.createElement('p');
+                newLog.textContent = logInput.value;
+                logEntries.appendChild(newLog);
+                logInput.value = '';
+            }
+        });
+    </script>
+</body>
+</html>

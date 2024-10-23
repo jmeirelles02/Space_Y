@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Colaboradores</title>
+    <link rel="stylesheet" href="exploresty.css">
+</head>
+<body>
+
+    <section class="search-filter-section">
+        <input type="text" id="searchBar" oninput="filtrarColaboradores()" placeholder="Pesquisar por nome, cargo ou departamento...">
+
+        <div class="filter-bar">
+            <div class="filter-group">
+                <label for="filterSoft">Soft Skills:</label>
+                <select id="filterSoft" onchange="filtrarColaboradores()">
+                    <option value="">Todas</option>
+                    <option value="Comunicação">Comunicação</option>
+                    <option value="Trabalho em equipe">Trabalho em equipe</option>
+                    <option value="Gestão de Tempo">Gestão de Tempo</option>
+                    <option value="Gestão de Equipe">Gestão de Equipe</option>
+                    <option value="Resolução de Problemas">Resolução de Problemas</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="filterHard">Hard Skills:</label>
+                <select id="filterHard" onchange="filtrarColaboradores()">
+                    <option value="">Todas</option>
+                    <option value="Matemática Avançada">Matemática Avançada</option>
+                    <option value="Análise de Dados">Análise de Dados</option>
+                    <option value="Programação">Programação</option>
+                    <option value="Excel Avançado">Excel Avançado</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="colaborador-list">
+        </div>
+    </section>
+
+    <script src="explorscript.js"></script>
+</body>
+</html>

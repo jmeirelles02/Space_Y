@@ -1,0 +1,89 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #232023;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #002F61;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .team-section, .chat-section, .log-section {
+            background-color: #ffffff;
+            color: #232023;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #002F61;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 4px;
+        }
+
+        .chat-box {
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f4f4f4;
+            color: #232023;
+            border-radius: 4px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f4f4f4;
+            color: #232023;
+        }
+
+        button {
+            background-color: #002F61;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004080;
+        }
+
+        #log-entries p {
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 4px;
+            margin: 10px 0;
+        }

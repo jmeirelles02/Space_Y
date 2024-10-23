@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Time</title>
+    <link rel="stylesheet" href="gerenciamentodetime.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Time</h1>
+        <div id="team-list">
+        </div>
+
+        <div id="team-form">
+            <h2>Gerenciar times</h2>
+            <label for="team-select">Selecionar Time:</label>
+            <select id="team-select">
+            </select>
+
+            <h3>Membros do Time</h3>
+            <ul id="member-list">
+            </ul>
+
+            <div id="add-member">
+                <h3>Adicionar Membro</h3>
+                <input type="text" id="new-member-name" placeholder="Member Name">
+                <input type="text" id="new-member-role" placeholder="Role">
+                <button id="add-member-btn">Adicionar Membro</button>
+            </div>
+
+            <div id="remove-member">
+                <h3>Remover Membro</h3>
+                <input type="text" id="remove-member-name" placeholder="Member Name">
+                <button id="remove-member-btn">Remover Membro</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="gerenciamentodetime.js"></script>
+</body>
+</html>
